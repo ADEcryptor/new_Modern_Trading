@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "26757644807",
+    "project_id": "new-moderntrading",
+    "storage_bucket": "new-moderntrading.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26757644807:android:f510257d89c3133d7be0a2",
+        "android_client_info": {
+          "package_name": "com.example.newmoderntrading"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26757644807-sgpb2e67lkcq1e6c20p5r4fe0qnqnd4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASqfB6Gk5CE9jRB0HKnAZGND45kBJiUbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26757644807-sgpb2e67lkcq1e6c20p5r4fe0qnqnd4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

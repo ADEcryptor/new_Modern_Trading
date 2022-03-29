@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".UploadItemActivity">
+
+    <ImageButton
+        android:id="@+id/backButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:contentDescription="@string/BackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
+        tools:ignore="RedundantDescriptionCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/uploadItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/uploadItem"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/pictureOfItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="24dp"
+        android:text="@string/pictureOfItem"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadItemText" />
+
+    <TextView
+        android:id="@+id/videoOfItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/videoOfItem"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addImageButton" />
+
+    <ImageButton
+        android:id="@+id/addVideoButton"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/addVideo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoOfItemText"
+        app:srcCompat="@drawable/ic_baseline_video_call_24" />
+
+    <EditText
+        android:id="@+id/itemNameText"
+        android:layout_width="220dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints=""
+        android:background="#ffffff"
+        android:drawableStart="@drawable/ic_baseline_agriculture_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/itemName"
+        android:inputType="textPersonName"
+        android:paddingStart="5sp"
+        android:paddingEnd="0sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColorHint="#1976D2"
+        android:textColor="#1976D2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addVideoButton" />
+
+    <Button
+        android:id="@+id/uploadItemButton"
+        android:layout_width="233dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/uploadItem"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameText"
+        app:layout_constraintVertical_bias="0.647"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/addImageButton"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/addImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pictureOfItemText"
+        app:srcCompat="@drawable/ic_baseline_image_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

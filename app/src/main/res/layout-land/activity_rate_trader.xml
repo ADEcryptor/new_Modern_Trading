@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RateTraderActivity">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:contentDescription="@string/BackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
+        tools:ignore="RedundantDescriptionCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/emailInput3"
+        android:layout_width="369dp"
+        android:layout_height="147dp"
+        android:autofillHints=""
+        android:background="#ffffff"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/writeAReview"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10sp"
+        android:paddingTop="5sp"
+        android:paddingEnd="0sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateTheOtherTrader"
+        app:layout_constraintVertical_bias="0.982" />
+
+    <TextView
+        android:id="@+id/rateTheOtherTrader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rateTheOtherTrader"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background"
+        android:contentDescription="@string/downvote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateTheOtherTrader"
+        app:srcCompat="@drawable/ic_baseline_thumb_down_24"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background"
+        android:contentDescription="@string/upvote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateTheOtherTrader"
+        app:srcCompat="@drawable/ic_baseline_thumb_up_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
